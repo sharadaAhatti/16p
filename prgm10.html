@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>covertion of C to F and F to C </h1>
+	<label for="cel">Enter Value in Celsius</label>
+	<input type="text" name="" id="cel"><br>
+	<button type="submit" onclick="celToFehr()">Result: </button>
+	<h4 id="result"></h4>
+	<label for="fahr">Enter Value in Fahrenheit</label>
+	<input type="text" name="" id="fahr"><br>
+	<button type="submit" onclick="fehrToCel()">Result: </button>
+	<h4 id="result"></h4>
+  
+        
+        <script type="text/javascript">
+	       function celToFehr()
+           {
+		    var cTemp = parseInt(document.getElementById("cel").value);
+		    var cToFehr = (cTemp * 9/5 + 32);
+		    document.getElementById("result").innerHTML ="<br>Fahrenheit "+cTemp+" is converted "+ cToFehr +" Celsius";
+		    document.write("<br>Celsius "+cTemp+" is converted "+cToFehr+" Fahrenheit");
+	        }
+	    function fehrToCel(){
+		var fTemp = parseInt(document.getElementById("fahr").value);
+		var cToCel = ((fTemp - 32) * 5 / 9);
+		document.getElementById("result").innerHTML ="<br>Fahrenheit "+fTemp+" is converted "+ cToCel +" Celsius";
+        document.write("<br>Celsius "+fTemp+" is converted "+cToCel+" Fahrenheit");
+    }
+        
+        
+    </script>
+    
+</body>
+</html>
