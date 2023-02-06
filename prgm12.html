@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>loop statement in JS</h1>
+    <label for="one ">enter the valve for x</label>
+    <input type="text" name="" id="one">
+    <br>
+    <label for="one">enter the value for y</label>
+    <input type="text" name="" id="two">
+    <br>
+    <button onclick="arithmetic()" type="submit">click</button>
+    <h1 id="result"></h1>
+
+    <script>
+        function arithmetic(){
+            var x=parseInt(document.getElementById("one").value);
+            var y=parseInt(document.getElementById("two").value);
+            
+            var z= "Addition of x + y =" +(x + y);
+            alert("Addition of x + y =" + (x + y) +" \n Substraction of x - y =" + (x - y) +" \n Multiplication of x * y =" + (x * y) +" \n Division of x / y =" + (x / y));
+        }
+    </script>
+</body>
+</html>
