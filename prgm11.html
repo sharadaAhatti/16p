@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="a">enter value of a</label>
+    <input type="text" name="" id="a"><br><br>
+    <label for="b">enter value of b</label>
+    <input type="text" name="" id="b"><br><br>
+    <label for="c">enter value of c</label>
+    <input type="text" name="" id="c"><br><br>
+    <button type="submit" onclick="large()">RESULT</button>
+    <h4 id="result"></h4>
+    <script>
+        function large(){
+        var a = parseInt(document.getElementById("a").value);
+        var b = parseInt(document.getElementById("b").value);
+        var c = parseInt(document.getElementById("c").value);
+
+        if(a>b && a>c)
+        {
+            document.getElementById("result").innerHTML = "Largest number is : "+ (a);
+        }
+        else if(b>c)
+        {
+            document.getElementById("result").innerHTML = "largest number is : " + (b);
+        }
+        else{
+            document.getElementById("result").innerHTML = "largest number is : " + (c);       
+         }
+        }
+    </script>
+</body>
+</html>
+
+
